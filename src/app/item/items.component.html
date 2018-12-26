@@ -1,0 +1,12 @@
+<ActionBar title="My App" class="action-bar">
+</ActionBar>
+
+<AbsoluteLayout class="page">
+    <!--
+    <Label *ngFor="let item of items" backgroundColor="{{item.color}}" text="{{item.name}}" (tap)="pushBack(item)" [style.z-index]="getZIndex(item)"></Label>
+    -->
+    <!-- YOU CAN UNCOMMENT THIS TO SEE HOW IT WORKS WITH DIFFERENT POSITIONS (if you click on A or B zones its ok, but if you click on a A-B zone it does not work) -->
+    <Label backgroundColor="{{items[0].color}}" text="{{items[0].name}}" (tap)="pushBack(items[0])" [style.z-index]="getZIndex(items[0])"></Label>
+    <Label backgroundColor="{{items[1].color}}" top="10" text="{{items[1].name}}" (tap)="pushBack(items[1])" [style.z-index]="getZIndex(items[1])"></Label>
+    <!---->
+</AbsoluteLayout>
